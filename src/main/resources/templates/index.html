@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:if="${gotCredit != null}" th:text="${gotCredit ? 'Brawo' : 'Niestety, nie udało się dostać kredytu' }"> </h1>
+<form action="/" method="post">
+    <input type="number" name="salary" placeholder="Podaj miesięczny dochód"><br/>
+    <input type="number" name="bills" placeholder="Podaj miesięczne zobowiązania"><br/>
+    <input type="number" name="amountOfCredit" placeholder="Podaj kwotę kredytu"><br/>
+    <input type="number" name="numberOfMonths" placeholder="Podaj na ile miesięcy chcesz wziąć kredyt"><br/>
+    <input type="submit" value="Wyślij"><br/>
+</form>
+
+</body>
+</html>
